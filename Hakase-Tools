@@ -1,0 +1,89 @@
+command "/h <text>":
+    permission: hakase.plugin.114514
+    trigger:
+        if arg 1 is "help":
+            send "&4「&cHakase Plugin&4」 &rを&6導入していただき&rありがとうございます。" to player
+            send "(&7※注意 このプラグインを使用するにはOPまたは「hakase.plugin.114514」というパーミッションが必要になります。" to player
+            send "&7(ぶっちゃけ説明はGitHubが一番詳しいです。)" to player
+        if arg 1 is "ban"
+            send "&c公開&4BAN &9>> &r/hoban <MCID> <BAN者に表示されるメッセージ> <プレイヤーに表示されるメッセージ>"
+        if arg 1 is "ipban"
+            send "&c公開&4BAN &9>> &r/hoipban <MCID> <BAN者に表示されるメッセージ> <プレイヤーに表示されるメッセージ>"
+        if arg 1 is "fly"
+            send "&c飛んでる...!? &9>> &r/fly <on または off>" to player
+        if arg 1 is "gamemode"
+            send "&cゲームモード変更(自分のみ) &9>> &r/g <ゲームモード>" to player
+        if arg 1 is "gamemodeconsole"
+            send "&c他人のゲームモード変更(自分のみ) &9>> &r/gc <MCID> <ゲームモード>" to player
+command "/hoban <player> <text> <text>":
+    permission: hakase.plugin.114514
+    trigger:
+        send "正常に動作しました。" to player
+        broadcast "&a%arg 1% さんは&cBAN&rされました。&7(by %player%)"
+        broadcast "&6理由&r: %arg 3%"
+        execute console command "ban %arg 1% &fメッセージ: &r%arg 2% &7(by %player%)"
+command "/hoipban <player> <text> <text>":
+    permission: hakase.plugin.114514
+    trigger:
+        send "正常に動作しました。" to player
+        broadcast "&a%arg 1% さんは&cIPBAN&rされました。&7(by %player%)"
+        broadcast "&6理由&r: %arg 3%"
+        execute console command "ipban %arg 1% &fメッセージ: &r%arg 2% &7(by %player%)"
+command "/an <text>"
+    permission: hakase.plugin.114514
+    trigger:
+        broadcast "%arg 1%"
+        send "表示しました。" to player
+command "/hakasetools":
+    trigger:
+        send "&cHakase Tools &6version &c0.β.1 &7(Dev by Hakase)" to player
+command "/fly <text>":
+    permission: hakase.plugin.114514
+    trigger:
+        if arg 1 is "true":
+            set player's flight mode to true
+            send "&6[&cHakaseTools&6] &rTrue" to player
+        if arg 1 is "false":
+            set player's flight mode to false
+            send "&6[&cHakaseTools&6] &rFalse" to player
+        if arg 1 is "on":
+            set player's flight mode to true
+            send "&6[&cHakaseTools&6] &rTrue" to player
+        if arg 1 is "off":
+            set player's flight mode to false
+            send "&6[&cHakaseTools&6] &rFalse" to player
+        if arg 1 is "オン":
+            set player's flight mode to true
+            send "&6[&cHakaseTools&6] &rTrue" to player
+        if arg 1 is "オフ":
+            set player's flight mode to false
+            send "&6[&cHakaseTools&6] &rFalse" to player
+        if arg 1 is "有効":
+            set player's flight mode to true
+            send "&6[&cHakaseTools&6] &rTrue" to player
+        if arg 1 is "無効":
+            set player's flight mode to false
+            send "&6[&cHakaseTools&6] &rFalse" to player
+command "/g":
+    permission: hakase.plugin.114514
+    trigger:
+        if arg 1 is "s":
+            set gamemode of player to Survival
+        if arg 1 is "a":
+            set gamemode of player to Adventure
+        if arg 1 is "sp":
+            set gamemode of player to Spectator
+        if arg 1 is "c":
+            set gamemode of player to Creative
+        if arg 1 is "survival":
+            set gamemode of player to Survival
+        if arg 1 is "adventure":
+            set gamemode of player to Adventure
+        if arg 1 is "spectator":
+            set gamemode of player to Spectator
+        if arg 1 is "creative":
+            set gamemode of player to Creative
+command "/gc <player> <text>":
+    permission: hakase.plugin.114514
+    trigger:
+        execute console command "gamemode %arg 2% %arg 1%"
