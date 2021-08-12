@@ -5,6 +5,7 @@ command "/h <text>":
             send "&4「&cHakase Plugin&4」 &rを&6導入していただき&rありがとうございます。" to player
             send "(&7※注意 このプラグインを使用するにはOPまたは「hakase.plugin.114514」というパーミッションが必要になります。" to player
             send "&7(ぶっちゃけ説明はGitHubが一番詳しいです。)" to player
+            send "問い合わせは tell-me@heisei.be または GitHubのIssues でお願いします。" to player
         if arg 1 is "ban"
             send "&c公開&4BAN &9>> &r/hoban <MCID> <BAN者に表示されるメッセージ> <プレイヤーに表示されるメッセージ>"
         if arg 1 is "ipban"
