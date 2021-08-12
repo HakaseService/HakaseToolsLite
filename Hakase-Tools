@@ -87,3 +87,17 @@ command "/gc <player> <text>":
     permission: hakase.plugin.114514
     trigger:
         execute console command "gamemode %arg 2% %arg 1%"
+command "/vnc <player> <text>":
+    permission: hakase.plugin.114514
+    trigger:
+        broadcast "<%arg 1%> %arg 2%"
+command "/lnc <player> <text>":
+    permission: hakase.plugin.114514
+    trigger:
+        broadcast "%arg 1%&a: &r%arg 2%"
+任意ですcommand "/SNS":
+    trigger:
+        broadcast "&cYouTube&a:&r 「まだ何も設定されていません」で検索"
+        broadcast "&bTwitter&a:&r @まだ設定されていません"
+        broadcast "&eInsta&dgram&a:&r まだ設定されていません"
+        broadcast "&9Discord&a: &rまだ設定されていません#114514"
