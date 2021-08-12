@@ -5,7 +5,7 @@
   <h2>導入</h2>
   <p>① http://neko2.net/hakasetools にアクセス<br>
   ② 全て内容をコピー<br>
-  ③ Skriptプラグイン(各自で導入してください)のScriptフォルダーにHakaseToolsLite.skという殻のファイルを作成<br>
+  ③ Skriptプラグイン(各自で導入してください)のScriptフォルダーにHakaseToolsLite.skという空のファイルを作成<br>
   ④ サーバーで "/sk reload HakaseToolsLite" というコマンドを実行<br>
   ⑤ 導入完了<p>
   <h3>&nbsp;</h3>
@@ -28,3 +28,4 @@
   <p>"/lnc プレイヤー名 内容" で実行。Lunachatのチャットのフォーマットで勝手にプレイヤーをチャットさせたかのように偽造してしまう最悪システムです。</p>
 ----------------------------------------------------------------------------------------------
   <h4>Contact : tell-me@heisei.be</h4>
+  <h4>Thank you for donwloading!</h4>
