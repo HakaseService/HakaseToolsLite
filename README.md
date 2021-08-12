@@ -1,4 +1,4 @@
-<h1>Hakase Tools Lite</h1><h3>0.β.1
+<h1>Hakase Tools Lite</h1><h3>0.β.1</h3>
 <h3>(マインクラフトプラグインのSkriptというプラグインで使用できるコマンドパック？というかプラグインです(?))</h3>
 <h3>このプラグインは実行するには「hakase.plugin.114514」という権限またはOPが必要です。</h3>
 <h1>How to use / 使い方<h1>
