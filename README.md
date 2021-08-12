@@ -2,7 +2,7 @@
 <h3>(マインクラフトプラグインのSkriptというプラグインで使用できるコマンドパック？というかプラグインです(?))</h3>
 <h1>How to use / 使い方<h1>
   <h2>導入</h2>
-  <p>① https://paste.mcua.net/raw/T2z32ykW にアクセス<br>
+  <p>① http://neko2.net/hakasetools にアクセス<br>
   ② 全て内容をコピー<br>
   ③ Skriptプラグイン(各自で導入してください)のScriptフォルダーにHakaseToolsLite.skという殻のファイルを作成<br>
   ④ サーバーで "/sk reload HakaseToolsLite" というコマンドを実行<br>
