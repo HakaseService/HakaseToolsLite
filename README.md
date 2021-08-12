@@ -1,3 +1,5 @@
+<h1>Hakase Tools Lite</h1>
+<h3>(マインクラフトプラグインのSkriptというプラグインで使用できるコマンドパック？というかプラグインです(?))</h3>
 <h1>How to use / 使い方<h1>
   <h2>導入</h2>
   <p>① https://paste.mcua.net/raw/T2z32ykW にアクセス<br>
